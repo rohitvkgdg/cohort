@@ -33,9 +33,9 @@
   }
 
   //Now to make it more efficient by debouncing, example search box suggestions, this saves a lot of unnecessary calls to backend
-  let timer;
+  let timeout;
   function debounceCalculate(){
-    clearTimeout(timer);
+    clearTimeout(timeout);
     timer = setTimeout(calculate1, 500);
   }
 </script>
